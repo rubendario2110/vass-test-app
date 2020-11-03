@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "vass-test-app"
+    }
+  },
+  "defaultProject": "vass-test-app",
+  "cli": {
+    "analytics": "8054d5af-d0ee-4beb-8dc4-34dead5a6740"
+  }
 }
