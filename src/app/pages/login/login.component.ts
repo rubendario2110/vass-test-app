@@ -30,6 +30,7 @@ export class LoginComponent implements OnInit {
         this.router.navigateByUrl('/');
       },
       (error) => {
+        alert("error de autenticacion");
         console.log(error);
       }
     );

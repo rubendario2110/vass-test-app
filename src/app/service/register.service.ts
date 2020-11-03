@@ -9,7 +9,7 @@ import { CookieService } from 'ngx-cookie-service';
 export class RegisterService {
   constructor(private http: HttpClient, private cookies: CookieService) {}
   login(user: any): Observable<any> {
-    return this.http.post("https://reqres.in/api/login", user);
+    return this.http.post("http://localhost:3001/login", user);
   }
   register(user: any): Observable<any> {
     return this.http.post("http://localhost:3001/register", user);
