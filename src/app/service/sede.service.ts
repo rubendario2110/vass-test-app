@@ -14,6 +14,6 @@ export class SedeService {
     let token = this.token.getToken();
     console.log(token);
     headers.set('x-access-token',token);
-    return this.http.post("http://localhost:3001/registerSede", sede,{headers:headers});
+    return this.http.post("http://localhost:3000/registerSede", sede,{headers:headers});
   }
 }

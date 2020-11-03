@@ -16,6 +16,6 @@ export class CiudadService {
     headers.set('x-access-token',token);
 
 
-    return this.http.post("http://localhost:3001/registerCiudad", ciudad,{headers:headers});
+    return this.http.post("http://localhost:3000/registerCiudad", ciudad,{headers:headers});
   }
 }
