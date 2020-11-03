@@ -1,0 +1,30 @@
+<div class="d-flex flex-column h-100 justify-content-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-header">Registar ciudad</div>
+                    <div class="card-body">
+                        <form [formGroup]="form">
+                            <div class="form-group">
+                                <label for="ciudad">Nombre de la ciudad </label>
+                                <input id="ciudad" formControlName="ciudad" type="text" required class="form-control" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <a routerLink="/" class="ml-2 btn btn-outline-secondary">
+                                Home
+                            </a>
+                            <button (click)="submit()" [disabled]="!form.valid" type="submit"
+                                class="btn btn-outline-success">
+                                Log in
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
