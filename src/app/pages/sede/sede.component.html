@@ -3,12 +3,21 @@
         <div class="row">
             <div class="col-12 col-md-6 offset-md-3">
                 <div class="card">
-                    <div class="card-header">Registar ciudad</div>
+                    <div class="card-header">Registrar Sede</div>
                     <div class="card-body">
                         <form [formGroup]="form">
                             <div class="form-group">
-                                <label for="ciudad">Nombre de la ciudad </label>
-                                <input id="ciudad" formControlName="ciudad" type="text" required class="form-control" />
+                                <label for="sede">Nombre de la Sede </label>
+                                <input id="sede" formControlName="sede" type="text" required class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="ciudad">Ciudad de Ubicaciòn </label>
+                                <select id="ciudad" required class="form-control" formControlName="ciudad">
+                                    <option selected>Seleccione Ciudad</option>
+                                    <option value="1">Bogota</option>
+                                    <option value="2">Medellin</option>
+                                    <option value="3">Cali</option>
+                                  </select>
                             </div>
                         </form>
                     </div>

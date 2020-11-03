@@ -35,6 +35,7 @@ const routes: Routes = [
       import('./pages/register/register.module').then((m) => m.RegisterModule),
   },
   { path: 'ciudad', loadChildren: () => import('./pages/ciudad/ciudad.module').then(m => m.CiudadModule) },
+  { path: 'sede', loadChildren: () => import('./pages/sede/sede.module').then(m => m.SedeModule) },
 ];
 
 @NgModule({
